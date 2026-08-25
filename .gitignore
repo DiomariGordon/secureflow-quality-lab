@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+playwright-report/
+test-results/
+reports/*.json
+reports/*.xml
+reports/*.txt
+reports/runtime-*
+*.db
+.env
+.DS_Store
+.vscode/
+.idea/
+
+# Keep the two curated sample reports in version control.
+!reports/verification-status.md
+!reports/crypto-readiness.md

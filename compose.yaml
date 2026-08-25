@@ -1,0 +1,17 @@
+services:
+  secureflow:
+    build: .
+    environment:
+      SECUREFLOW_ENV: ${SECUREFLOW_ENV:-development}
+      SECUREFLOW_DB_PATH: /data/secureflow.db
+      SECUREFLOW_SECRET: ${SECUREFLOW_SECRET:?Copy .env.example to .env and set SECUREFLOW_SECRET}
+      SECUREFLOW_COOKIE_SECURE: ${SECUREFLOW_COOKIE_SECURE:-false}
+      SECUREFLOW_SEED_DEMO_USERS: ${SECUREFLOW_SEED_DEMO_USERS:-true}
+      SECUREFLOW_SESSION_TTL_SECONDS: ${SECUREFLOW_SESSION_TTL_SECONDS:-3600}
+    ports:
+      - "8000:8000"
+    volumes:
+      - secureflow-data:/data
+
+volumes:
+  secureflow-data:

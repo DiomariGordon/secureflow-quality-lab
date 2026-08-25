@@ -1,0 +1,20 @@
+{
+  "systems": [
+    {
+      "name": "customer-portal",
+      "components": [
+        {"name": "tls-certificate", "algorithm": "RSA"},
+        {"name": "session-encryption", "algorithm": "AES-256"},
+        {"name": "token-signature", "algorithm": "ECDSA"}
+      ]
+    },
+    {
+      "name": "migration-lab",
+      "components": [
+        {"name": "key-establishment-pilot", "algorithm": "ML-KEM"},
+        {"name": "document-signature-pilot", "algorithm": "ML-DSA"},
+        {"name": "legacy-batch-encryption", "algorithm": "3DES"}
+      ]
+    }
+  ]
+}
