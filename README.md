@@ -17,7 +17,7 @@ The project asks five engineering questions:
 - 14 non-browser tests cover business rules, API workflows, persistence, security requirements, crypto inventory, and environment safety.
 - One Playwright end-to-end test exercises login, record creation, classification, and workflow submission through the browser; the project owner verified the workflow locally on the v0.2 learner baseline, and the current public revision is independently gated in CI.
 - Non-browser coverage is gated at a minimum of 80%; the v0.3 baseline measures above that threshold.
-- GitHub Actions is configured to run non-browser and Playwright suites as independent jobs and retain JUnit/coverage evidence.
+- GitHub Actions verified the non-browser and Playwright suites as independent passing jobs and retained JUnit/coverage evidence.
 
 ## System mental model
 

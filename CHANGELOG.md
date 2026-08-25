@@ -17,6 +17,7 @@
 - Separate non-browser and Playwright tests into independent GitHub Actions jobs.
 - Retain JUnit and coverage evidence and enforce an 80% non-browser coverage gate.
 - Record the owner-verified local Playwright pass on the v0.2 learner baseline and the 15-test public suite.
+- Verify the public GitHub quality gate: both non-browser and Playwright jobs pass and retain evidence artifacts.
 
 ### Documentation and curation
 
